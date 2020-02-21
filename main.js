@@ -311,10 +311,118 @@
 //..............................................
 
 
+//Math.name
+
+// console.log('Math.floor(5.9)', Math.floor(5.9));   // заокруглить до 5
+// console.log('Math.ceil(5.2)', Math.ceil(5.2));     // заокруглить до 6
+
+// console.log('Math.round(5.2)', Math.round(5.2));   // закруглить нормально
+
+// let num = 5.4254223
+// console.log('num.toFixed()', num.toFixed(2)); // 2 виводить дві цифри після коми i заокруглить до більшого 
+
+
+//Math.sin()
+//Math.cos()
+//Math.tan()
+
+
+// console.log('Math.sqrt(2)', Math.sqrt(15));
+// console.log('Math.pow(2, 5)', Math.pow(2, 5));
+// console.log('Math.abs(-5)', Math.abs(-5));
+
+
+
+// console.log('Math.max()', Math.max(2, 24, 12, 13, 134, 1, 13, -31,222)); //повертає тільки максимальне значення 
+// console.log('Math.min(2)', Math.min(2, 24, 12, 13, 134, 1, 13, -31,222)); // повертає мінімальне значення
+
+
+// console.log('Math.random()', Math.random()) // генерує любе число від 0 до 1 не включаєчи 0 і 1 
+
+// let rand = Math.round(Math.random()*10);
+// console.log(rand); // генерує число від 1 до 10
 
 
 
 
+
+// масив
+// let arr = [1, 55, 'Ivan', 'Yurii'];
+// console.log(arr[2]);
+
+
+
+
+
+//виводить будь яку фразу 
+// let arr = ['Просто', 'ЩОсьтам', 'LOGOS', 'IT', 'Треба вчитись'];
+
+// let num = Math.round(Math.random() * (arr.length-1));
+// console.log(arr[num]);
+
+
+// function num(a, b) {
+
+//     return Math.round(Math.random());
+// }
+
+// console.log(num)
+// num(1, 100);
+
+
+//обчислює площу кола 
+// let radius = +prompt('Введіть радіус кругу ')
+// function sq() {
+//   return Math.PI * radius * radius;
+// }
+
+// console.log(sq());
+
+
+
+// function randomizer (min, max) {
+//     let rand = min + Math.round(Math.random() * (max - min));
+//     return rand;
+// }
+// console.log(randomizer(2, 5))
+
+
+// Рандомне число 
+// let randomizer = (min, max) =>  min + Math.round(Math.random() * (max - min));
+// console.log(randomizer(2, 10));
+
+
+
+
+//квадратний корінь 
+// let ask = +prompt('number');
+
+// function n() {
+//     if(ask >= 1) {
+//         return Math.sqrt(ask);
+//     } else if ( ask <= 0) {
+//         return alert('Ведіть додатнє число');
+//     }
+//     else {
+//         return alert('Введіть число')
+//     }
+// }
+
+// console.log(n());
+
+
+//іниший варіант 
+// function kvadrat(num) {
+//     if(num < 0) {
+//         console.log('Ви ввели відємне число')
+//     } else if (num != (num * 1)) {
+//         console.log('Тут стрічка')
+//     } else {
+//         console.log(Math.sqrt(num))
+//     }
+// }
+// let ask = prompt('введіть число');
+// kvadart(ask);
 
 
 
