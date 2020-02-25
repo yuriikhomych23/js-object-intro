@@ -430,8 +430,7 @@
 
 
 
-
-
+//CHARAT LENGTH TOUPPERCASR TOLOWERCASE.....................
 // let s = 'Hello';
 
 // console.log(s.length);
@@ -458,39 +457,109 @@
  
 
 
-
+//INDEXOF............................................
 // let s1 = 'Hello';
-// console.log(s1.indexOf('l'));       //вказуєм літеру повертає індекс;
-//  //2
+// console.log(s1.indexOf('l'));        //2  //вказуєм літеру повертає індекс;
+
 
 
 // let s2 = 'Hello world';
 // console.log(s2.indexOf('world'));   //6
+// console.log(s2.indexOf('worle'));    //-1 тому що такого слова немає в стрічці
+// console.log(s2.indexOf('worl'));    //6
 
 
 
-
-let s3 = prompt('');
-
-let res = s3.indexOf(' ');
-
-if(s3 < 0) {
-    console.log('Пробіл відсутній');
-} else {
-    for(let i = 1; i < s3.length; i++) {
-        console.log(res)
-    }
-}
+// let s4 = 'Hello world';
+// console.log(s4.indexOf('o', 5));       // 7  //другий параметр позиція звідки почати пошук // почне шукати пілся 5 індексу
 
 
 
 
 
+//TASK
+//виводить тільки якщо введоно слово css або html
+// let ask = prompt('') ;
+
+// ask = ask.toLowerCase();
+
+// if(ask.indexOf('css') != -1 || ask.indexOf('html') != -1) {
+//     console.log('Таке слово існує');
+// } else {
+//     console.log('Такого слова не існує');
+// }
 
 
 
 
 
+//SUBSTRING...............................................................
+// let str1 = 'JavaScript';
+// console.log(str1.substring(4)); //Script // приймає start i end (end не обовязковий параметр)// вирізає 
+// console.log(str1.substring(4, 7)); //Scr // вирізає він 4 по 7 не включно з 7
+// console.log(str1.substring(4, -2));//Java // мінус перетворює на нуль і поміщує наперед, від 0 до 4
+// console.log(str1.substring(-2, 4));//Java // буде так само від 0 до 4 
 
 
+
+
+
+//SUBSTR......................................................
+// let str2 = 'JavaScript';
+// console.log(str2.substr(4)); // Script 
+// console.log(str2.substr(4, 2)); //Sc // виводить з 4 індекса 2 символи 
+// console.log(str2.substr(4, -2))// поверне пусту стрічку оскільки не може бути мінусової стрічки 
+// console.log(str2.substr(-4, 2)) // ri // відрахує 4 символи справа і поверне два елементи
+
+
+
+
+//SLICE...............................................
+// let str3 = 'JavaScript';
+// console.log(str3.slice(4)) //Script 
+// console.log(str3.slice(4, 7)) //Scr // поверне від 4 індекса до 7 не включно
+// console.log(str3.slice(4, -2)) // Scri // відріже 2 елементи і поверне 4 елементи 
+// console.log(str3.slice(-4, 2)) // нічого не повене, пуста стрічка
+// console.log(str3.slice(-4, -2));// ri // з мінус 4 позиції зробило ще мінус 2 
+
+
+
+
+
+//SPLIT.............................................................
+// бере нашу стрічку і розбиває її на масив 
+// якщо немає жодного параметру кидає все одним елентом в масив
+// let str4 = 'JavaScript HTML CSS';
+// console.log(str4.split()); 
+// console.log(str4.split(' '));// розібє на 3 елементи //["JavaScript", "HTML", "CSS"]
+// console.log(str4.split('')); // розібє на букви: кожен елемент масиву
+
+
+
+
+//виводить першу літеру верхнім регістром 
+// let name = prompt('Write your name');
+
+// let res = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+// console.log(res);
+
+
+
+
+
+//INCLUDES...............................................
+// const str1 = 'food';
+// const str2 = 'foo';
+// console.log(str1.includes(str2));// true // повертає або true або false 
+
+
+
+
+
+//ENDSWITH STARTSWITH.......................................
+// let str1 = 'oleg@gmail.com';
+// console.log(str1.endsWith('com'));//true // повертає значення або true або false 
+// console.log(str1.endsWith('ua')); // false
+// console.log(str1.startsWith('com'));//false 
+// console.log(str1.startsWith('ua')); // false
 
