@@ -432,6 +432,58 @@
 
 
 
+// let s = 'Hello';
+
+// console.log(s.length);
+// console.log(s.charAt(1))// вказуєм індекс повертає літеру 
+
+
+// console.log(s.toUpperCase());
+// console.log(s.toLowerCase());
+
+
+
+
+//виводить перше слово з великої літери  
+// let ask = prompt('Write your name');
+
+// let res = ask.charAt(0).toUpperCase();
+
+// for(let i = 1; i < ask.length; i++){
+//     res += ask.charAt(i).toLowerCase();
+// }
+
+// console.log(res);
+
+ 
+
+
+
+// let s1 = 'Hello';
+// console.log(s1.indexOf('l'));       //вказуєм літеру повертає індекс;
+//  //2
+
+
+// let s2 = 'Hello world';
+// console.log(s2.indexOf('world'));   //6
+
+
+
+
+let s3 = prompt('');
+
+let res = s3.indexOf(' ');
+
+if(s3 < 0) {
+    console.log('Пробіл відсутній');
+} else {
+    for(let i = 1; i < s3.length; i++) {
+        console.log(res)
+    }
+}
+
+
+
 
 
 
